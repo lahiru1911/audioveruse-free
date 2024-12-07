@@ -1,0 +1,70 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+#app {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.file-picker {
+  margin: 20px 0;
+}
+
+.file-label {
+  display: inline-block;
+  background: #fff;
+  color: #2575fc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+audio {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#controls button {
+  background: #2575fc;
+  color: white;
+}
+
+#speedControls button {
+  background: #6a11cb;
+  color: white;
+}

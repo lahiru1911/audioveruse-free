@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AudioVerse Free</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js')
+        .then(() => console.log('Service Worker Registered'))
+        .catch(err => console.error('Service Worker Registration Failed:', err));
+    }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <h1>AudioVerse Free</h1>
+    <div class="file-picker">
+      <label for="fileInput" class="file-label">Choose a Song</label>
+      <input type="file" id="fileInput" accept="audio/*" />
+    </div>
+    <audio id="audioPlayer" controls></audio>
+    <div id="controls">
+      <button id="playBtn">▶️ Play</button>
+      <button id="pauseBtn">⏸ Pause</button>
+      <button id="stopBtn">⏹ Stop</button>
+    </div>
+    <div id="speedControls">
+      <button id="slowBtn">🐢 Slow Down</button>
+      <button id="normalBtn">⚡ Normal Speed</button>
+      <button id="fastBtn">🚀 Speed Up</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
